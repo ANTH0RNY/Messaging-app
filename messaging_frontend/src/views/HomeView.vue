@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import BaseLayout from '@/layout/BaseLayout.vue'
+import ChatArea from '@/components/ChatArea.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <BaseLayout>
+      <ChatArea />
+    </BaseLayout>
   </main>
 </template>
