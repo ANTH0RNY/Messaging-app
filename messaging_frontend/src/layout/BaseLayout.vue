@@ -38,7 +38,7 @@ import CogIcon1 from '@/components/icons/CogIcon1.vue'
         </div>
       </div>
     </div>
-    <div class="right">
+    <div class="right w-full">
       <slot />
     </div>
   </div>

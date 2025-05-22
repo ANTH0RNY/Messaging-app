@@ -20,12 +20,12 @@
     </div>
     <div class="body">
       <p>{{ contactName }}</p>
-      <p>
+      <p class="text-nowrap">
         {{ truncateMsg(lastMsg) }}
       </p>
     </div>
     <div class="meta-data flex ms-auto flex-col text-xs justify-between gap-2 mb-auto h-10/12">
-      <p class="">{{ formatDate(lastMsgDate) }}</p>
+      <p class="text-nowrap">{{ formatDate(lastMsgDate) }}</p>
       <p
         v-if="numberOfUnreadMsg"
         class="ms-auto rounded-full bg-green-500 w-6 h-6 text-center flex items-center justify-center"
