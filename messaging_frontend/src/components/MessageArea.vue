@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex flex-col dark:bg-gray-900 dark:text-white">
     <MessageNav :profileUrl="profileURL" :lastSeen="lastSeen" :username="username" />
-    <div class="overflow-y-scroll no-scroll border border-black dark:bg-gray-900 w-full">
+    <div class="overflow-y-scroll no-scroll dark:bg-gray-900 w-full">
       <MessageCard v-for="mess in messages" :key="mess.messageId" :message="mess" :isLeft="randomizeLocation()"
         :showProfile="false" />
     </div>

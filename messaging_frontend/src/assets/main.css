@@ -1,10 +1,15 @@
-@import './base.css';
-@import 'tailwindcss';
+@import "./base.css";
+@import "tailwindcss";
 
 @theme {
-  --font-jetbrains:
-    'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  --font-jetbrains: "JetBrains Mono Variable", ui-monospace, SFMono-Regular,
+    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer utilities {
+  .undo-text-lg {
+    line-height: revert !important;
+  }
 }
 
 @layer components {
@@ -33,9 +38,17 @@
     /* Firefox */
   }
 
+  .line-height1 {
+    line-height: 1;
+  }
+
   /* Apply to the container you want to scroll */
 }
 
 .chart-card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#undo-text-lg {
+  line-height: revert;
 }
