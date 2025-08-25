@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center py-1 px-2 dark:bg-slate-800">
+  <div class="flex items-center py-1 px-2 dark:bg-gray-900">
     <div class="flex items-center gap-2">
       <div class="flex items-center justify-center w-15 h-15 rounded-full overflow-hidden">
         <img v-if="profileUrl" :src="profileUrl" :alt="`${username} profile picture`">

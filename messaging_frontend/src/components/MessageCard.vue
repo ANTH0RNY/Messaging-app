@@ -9,7 +9,7 @@
     </div>
 
     <div class="body p-4 max-w-6/12"
-      :class="`${isLeft ? 'mt-auto rounded-b-xl rounded-tr-xl bg-slate-800' : 'rounded-t-xl ml-auto rounded-bl-xl bg-emerald-900 mb-auto'}`">
+      :class="`${isLeft ? 'mt-auto rounded-b-xl rounded-tr-xl bg-slate-900' : 'rounded-t-xl ml-auto rounded-bl-xl bg-emerald-900 mb-auto'}`">
       <p>
         {{ message.body }}
       </p>

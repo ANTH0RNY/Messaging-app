@@ -1,10 +1,12 @@
 <template>
-  <div class="w-full flex flex-col dark:bg-gray-900 dark:text-white">
+  <div class="w-full flex flex-col dark:bg-gray-800 dark:text-white px-0.5">
     <MessageNav :profileUrl="profileURL" :lastSeen="lastSeen" :username="username" />
-    <div class="overflow-y-scroll no-scroll dark:bg-gray-900 w-full">
+    <!-- <div class="overflow-y-scroll no-scroll w-full"> -->
+    <div class="overflow-y-scroll no-scroll dark:bg-[url(/dwn_1.png)] w-full">
       <MessageCard v-for="mess in messages" :key="mess.messageId" :message="mess" :isLeft="randomizeLocation()"
         :showProfile="false" />
     </div>
+    <!-- </div> -->
     <MessageInput />
   </div>
 </template>

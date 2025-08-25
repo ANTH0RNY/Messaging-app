@@ -1,6 +1,6 @@
 <template>
   <div class="px-2 py-1 flex items-center gap-4 bg-slate-900">
-    <PlusIcon2 class="flex-none w-10 h-10 p-0 rounded-full" />
+    <PlusIcon2 class="flex-none w-10 h-10 p-0 rounded-full hover:bg-gray-500 hover:cursor-pointer" />
     <textarea rows="1" ref="message-textarea-ref" class="line-height1 py-2 px-2 text-lg rounded grow no-scroll flex
       items-center bg-white/20 rounded-lg resize-none focus:outline-none focus:border
       focus:border-white" v-model="messageText" id="undo-text-lg" />
